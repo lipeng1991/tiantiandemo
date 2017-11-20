@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>强大的innerHTML</title>
+<style>
+body{font:12px/1.5 Arial;background-color:azure;line-height:2em;}
+.test2{font-weight:bold;font-size:1.5em;padding:1em;}
+.test1{color:red;}
+#outer{width:500px;margin:0 auto;}
+#outer div{border:2px solid #ccc;padding:10px;margin-bottom:10px;text-indent:2em;cursor:pointer;}
+</style>
+<script>
+window.onload = function ()
+{
+	var testDiv = document.getElementById("outer").getElementsByTagName("div");
+	for(var i = 0; i < testDiv.length; i++)
+	{
+		testDiv[i].onclick = function ()
+		{
+			alert(this.innerHTML)	
+		}	
+	}
+}
+</script>
+</head>
+<body>
+<div id="outer">
+    <div><span class='test2'>相位对焦：</span>英文为：“Phase Detection Auto Focus”，简称：PDAF。字面意思就是“相位检测自动对焦”。需要指出的是，相位对焦技术在数码相机领域应用已经十分成熟，在智能手机领域则仍处于起步阶段。通常而言相机的自动对焦方式有两种：反差对焦和相位对焦。反差对焦的原理是根据焦点处画面的对比度变化，寻找对比度最大时的镜头位置，也就是准确对焦的位置。</div>
+    <div><span class='test2'>相位对焦</span>相比反差对焦，行程缩短速度加快。再来说说相位对焦，它的原理是在感光元件上预留出一些遮蔽像素点，专门用来进行相位检测，通过像素之间的距离及其变化等来决定对焦的偏移值从而实现准确对焦。相比反差对焦，相位对焦不需要镜头的反复移动，对焦行程短了很多，对焦过程干净不犹豫。但另一方面，由于需要利用CMOS上的遮蔽像素点进行相位检测，故此相位对焦对光线强度的要求比较高。</div>
+    <div><span class='test1'>相位式优点：</span>只需要计算一次就完成对焦，对焦速度极快，并且降低处理器计算负担。<span class='test1'>相位式缺点：</span>
+    在弱光环境下容易对不上焦。</div>
+    <div><span class='test2'>反差对焦</span>耗时太长。镜头从开始对焦到最后合焦完毕一直不停移动，“走过站”以后的回退过程更是让对焦行程增大，反映给用户的就是对焦速度较慢。以拍摄一枚硬币为例，最开始画面是虚焦的状态，随后镜头移动，人们可以看到屏幕中的硬币逐渐清晰起来。直到某一个位置（合焦状态）硬币最为清晰，但摄像头模组自身是意识不到此时已经合焦完毕的，镜头会继续移动，此时人们会看到硬币又变得模糊。这时摄像头模组才意识到镜头“走过站了”，于是回退至刚才清晰的焦点位置，这样一次对焦就完成了。</div>
+</div>
+</body>
+</html>

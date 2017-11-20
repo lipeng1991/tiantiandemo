@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>事件委托</title>
+  <style>
+  body{background-color:lightgray;}
+  table{
+        width:600px;
+		height:600px;
+		border:0;
+		border-collapse:collapse;
+		background:green;
+        margin:0 auto;
+		}
+  td{
+     border:1px solid gray;
+	 }
+  caption{
+  color:black;
+  font-size:200%;}
+  </style>
+ </head>
+ <body>
+
+ <table>
+ <caption>用事件委托做一个五子棋</caption>
+    <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	</tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+	<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+
+<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+
+<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+
+<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+
+<tr>
+	 <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+	  <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+	 <td></td>
+    </tr>
+ </table>
+  
+ </body>
+ <script>
+ /*var tds=document.getElementsByTagName('td');
+ var i=0;
+ while(i<tds.length){
+        tds[i].onclick=function(){
+			this.style.background='black';}
+			i++;
+			}*/
+
+//这个效率依然不够高，为什么不够高呢？你点击右键看源码，你要想象一下，这25个td在内存里，火狐给他分配了25个对象，这个25个对象，每一个你都给他写上属性，并且绑上函数，他还是很累的
+
+//我直接在table上绑定一个onclick,相当于在内存DOM上只绑定一次，但是我怎么去确定我点击的那个td对象去变色呢？
+
+//这个时候就要想到事件对象中的target 或者srcElement
+var num=0;
+var tab=document.getElementsByTagName('table')[0];
+tab.onclick=function(eve){ 
+	          var ev = eve ||window.event;
+	          if(ev.target.style.background!='white' &&ev.target.style.background!='black')
+	            ev.target.style.background=num++%2?"black":"white";
+				}
+            
+ </script>
+
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal web page</title>
+    <link rel="stylesheet" type="text/css" href="styles/test.css">
+</head>
+<body>
+<div id='allContainer'>
+    <div id="head">
+        <div id="nav">
+            <ul>
+                <li><a href="http://blog.csdn.net/tanyacui" target="_blank">Blog</a></li>
+                <li><a href="project/index.html" target='_blank'>Project</a></li>
+				<li><a href="detail/intro.html" target='_blank'>Introduce</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#" id='detail'>Contact me</a></li>           
+            </ul>
+        </div>
+        <div id="head_content">
+            <h1>HELLO</h1>
+            <p >What can I do for you?</p>
+            <button onclick="javascript:window.open('detail/intro.html')">Look at me</button> 
+			<span>or</span>
+			<button onclick="javascript:prompt('生命不息，奋斗不止','My tel:13313567245  My mail:'
+					 +'13313567245@163.com')">Hire me</button>
+            <p class="para">If you keep on believing,<br />
+                the dreams that you wish will come true.</p>
+        </div>
+    </div>
+    <div id="main">
+	
+        <img src="images/pic.jpg" width="40%" >
+        <h1>崔甜甜</h1>
+        <h2>web front designer &amp;Traveler</h2>
+        <div id="info">
+        <ul>
+            <li><a href="#" title='13313567245'>Phone</a></li>
+            <li><a href="#" title='cttlong'>Weixin</a></li>
+            <li><a href="#" title='13313567245@163.com'>Email</a></li>
+        </ul>
+        </div>
+
+    </div>
+</div>
+<script>
+      
+	                 var detail=document.getElementById('detail');
+         
+					 detail.onclick= function(){alert('请联系我哦'+'\n\n'+'我的联系电话:'+13313567245+'\n\n'+'我的邮箱:'
+					 +'13313567245@163.com'
+					 );};
+	 
+</script>
+</body>
+</html>

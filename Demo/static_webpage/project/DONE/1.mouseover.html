@@ -1,0 +1,31 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mouseover&mouseout</title>
+<style>
+body{color:#fff;font:12px/2.5 Tahoma;background-color:azure;}
+#div1{width:200px;height:200px;margin:0 auto;padding:10px;background:black;border:10px solid #000;cursor:pointer;}
+#div1.over{color:blue;font-weight:bold;font-size:1.5em;background:#f0f0f0;border:10px solid orange;text-decoration:underline;}
+</style>
+<script>
+/*当页面加载完毕，就会执行此匿名函数*/
+window.onload = function ()
+{
+	var testDiv = document.getElementById("div1");
+	testDiv.onmouseover = function ()
+	{
+		testDiv.className = "over"
+	};
+	testDiv.onmouseout = function ()
+	{
+		testDiv.className = ""	
+	}
+};
+</script>
+</head>
+<body>
+<div id="div1">当mouse悬浮在此时，我的样式会发生变化，移出以后又会恢复原样。</div>
+</body>
+</html>

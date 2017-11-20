@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>巧用display实现选项卡效果</title>
+<style>
+body,ul,li{margin:0;padding:0;}
+body{font:12px/1.5 Tahoma;background-color:azure;}
+#outer{width:450px;margin:10px auto;}
+#nav{overflow:hidden;zoom:1;background:blue;border:1px solid #000;text-align:center;}
+#nav li{float:left;color:#fff;height:30px;cursor:pointer;line-height:30px;list-style-type:none;width:33.3%;}
+#nav li.current{color:#000;background:#ccc;}
+#content{border:1px solid #000;border-top-width:0;}
+#content ul{line-height:25px;display:none;margin:0 30px;padding:10px 0;list-style-type:square;}
+</style>
+<script>
+window.onload = function ()
+{
+	var lis = document.getElementById("nav").getElementsByTagName("li");
+	var uls = document.getElementById("content").getElementsByTagName("ul");
+	
+	for(var i = 0; i < lis.length; i++)
+	{
+		lis[i].index = i;
+		lis[i].onmouseover = function ()
+		{
+			for(var n = 0; n < lis.length; n++) lis[n].className="";
+			this.className = "current";
+			for(var n = 0; n < uls.length; n++) uls[n].style.display = "none";
+			uls[this.index].style.display = "block"
+		}	
+	}
+}
+</script>
+</head>
+<body>
+<div id="outer">
+    <ul id="nav">
+        <li class="current">W3C关于结构HTML</li>
+        <li>W3C关于表现CSS</li>
+        <li>W3C关于行为Javascript</li>
+    </ul>
+    <div id="content">
+        <ul style="display:block;">
+            <li>HTML各类标签的认识</li>
+            <li>语义化</li>
+            <li>DOM</li>
+            <li>2D &amp; 3D</li>
+            <li>本地存储</li>
+        </ul>
+        <ul>
+            <li>层叠规则</li>
+            <li>选择器</li>
+            <li>position之排版</li>
+            <li>display之排版</li>
+            <li>盒子模型之排版</li>
+            <li>float之排版</li>
+            <li>绘制</li>
+            <li>动画</li>
+        </ul>
+        <ul>
+            <li>JavaScript组成：ECMAScript、DOM、BOM，JavaScript兼容性来源</li>
+            <li>event对象</li>
+            <li>冒泡与捕获</li>
+            <li>事件委托</li>
+            <li>GET与POST</li>
+            <li>异步</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

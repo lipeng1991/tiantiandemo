@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+  var area=[
+  ['太原' ,'晋城' ,'临汾'],
+  ['朝阳' ,'海淀' ,'东城']];
+  function liandong(){
+  var sel=document.getElementById('prov');
+  var opt="";
+  for(i=0,len=area[sel.value].length;i<len;i++){
+  opt=opt+'<option value="'+i+'">'+area[sel.value][i]+'</option >'; 
+  }
+  //alert(opt);
+  document.getElementById('city').innerHTML=opt;
+  }
+   
+  </script>
+ </head>
+ <body style="background-color:lightgray">
+  <select name="" id="prov" onchange="liandong();">
+      <option value="-1">请选择</option>
+      <option value="0">山西</option>
+	  <option value="1">北京</option>
+	  </select>
+	  <select name="" id="city">
+	  </select>
+ </body>
+</html>

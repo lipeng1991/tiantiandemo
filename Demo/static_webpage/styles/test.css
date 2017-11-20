@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: azure;
+}
+#allContainer{
+	width:60%;
+	margin: 0 auto;
+    font-family: Arial;
+    font-size:small;
+}
+#head{
+    background-color: cornsilk;
+    padding:0;
+}
+#main{
+    background-color: #292241;
+    padding:5em;
+}
+#nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: palegoldenrod ;
+    padding:0;
+}
+#nav ul li,#info ul li{
+    display: inline;
+    text-align: center;
+}
+#nav ul li a{
+    display: block;
+    float:left;
+    width:20%;
+    box-sizing: border-box;
+    padding:.5em 0;
+    border-right:0.1em double lightgray;
+    text-decoration: none;
+}
+
+#nav ul a:hover{
+    background-color: darkseagreen;
+}
+#head,#main{
+    text-align: center;
+}
+#head_content h1{
+    font-size:3em;
+    font-family: 微软雅黑,Arial;
+    margin-top:.5em;
+    margin-right:.5em;
+    margin-left:.5em;
+
+}
+#head_content p{
+     font-family:Arial;
+     padding:2.5em 0;
+ }
+
+button{
+    margin:1em 0;
+    background-color: red ;
+    padding:.8em 3em;
+    border:0px;
+    color: honeydew;
+}
+button,input{
+    margin:1em 0;
+    background-color: red ;
+    padding:.8em 3em;
+    border:0px;
+    color: honeydew;
+}
+#head_content p,span {
+    color: lightgray;
+}
+#main h1,#main h2{
+    color:white;
+    font-family: Arial;
+    line-height: 1.5em;
+}
+#info:after{
+    content:"";
+    display: table;
+    clear:both;
+}
+#info{
+    *zoom:1;
+}
+#info ul li a{
+    color:lightseagreen;
+    font-weight: bold;
+}
+#info{
+    margin:0 32%;
+}
+#info ul li a{
+    display: block;
+    float:left;
+    box-sizing: border-box;
+    padding:1em 0em;
+    width:33%;
+}

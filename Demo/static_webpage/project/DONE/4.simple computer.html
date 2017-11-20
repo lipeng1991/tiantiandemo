@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+<title>Simple computer</title>
+<style>
+body{background-color:lightgray;}
+h1{text-decoration:underline;
+   background-color:orange;
+   display:inline;}
+</style>
+<script type="text/javascript">
+function count(){
+      var txt1=parseFloat(document.getElementById('txt1').value);
+      var txt2=parseFloat(document.getElementById('txt2').value);
+      var sel=document.getElementById('select').value;
+      var result="";
+switch(sel){
+           case '+':
+   result=txt1+txt2;
+           break;
+           case '-':
+   result=txt1-txt2;
+           break;
+           case '*':
+   result=txt1*txt2;
+           break;
+           case '/':
+   result=txt1/txt2;
+           break;
+           default:
+   alert("输入有误，请仔细检查...");
+}
+document.getElementById('showresult').value=result;
+}
+</script>
+</head>
+<body>
+<h1>Simple computer</h1>
+<br />
+<br />
+<input type="text" id="txt1" />
+<select id="select">
+<option value='+'>+</option>
+<option value='-'>-</option>
+<option value='*'>*</option>
+<option value='/'>/</option>
+</select>
+<input type="text" id="txt2" />
+<input type="button" value="=" onclick="count();" />
+<input type="text" id="showresult" />
+</body>
+</html>

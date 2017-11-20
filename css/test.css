@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+	padding-top: 50px;
+	padding-bottom: 0px;
+	margin: 0;
+	font-size: medium;
+}
+       
+.carousel {
+	height: auto;
+	margin-bottom: 60px;
+}
+
+.carousel .item {
+	height: auto;
+	/*background-color: #000;*/
+}
+.carousel .item img {
+	width: 100%;
+	height:550px;
+}
+.carousel-caption {
+	z-index: 10;
+}
+.carousel-caption div.mycite {
+	margin-bottom: 20px;
+	/*font-size: 20px;*/
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 1.8;
+	text-align: center;
+	color:lightsalmon;
+}
+.summary {
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-left: 0px;
+	/*margin-right:20px;
+	margin-left:20px;*/
+}
+.summary div.study-heading{
+				text-align: center;
+				margin-bottom: 55px;
+			}
+div.study-heading header .h1,div.study-heading header .para{
+			font-family: "AvenirNext-Bold",Helvetica,Arial,sans-serif;
+            color: #4f4f51;
+            line-height: 1.1em;
+            font-size: 1.857em;
+            font-weight: 600;
+			}
+div.study-heading header .para{
+	        margin-top:30px;
+	        font-size: 1.2em;
+            line-height: 1.2em;
+            font-weight: 200;
+         
+}	
+#summary-container{
+	margin-bottom: 80px;
+	padding-left:90px;
+	padding-right: 90px;
+}	
+.summary .col-md-4 {
+	
+	margin-bottom: 20px;
+	text-align: center;
+}
+/*.addborder{
+	border:1px solid #CCC;
+}*/
+.summary .col-md-4 img {
+	width: 60%;
+	height: 150px;
+}
+.summary .col-md-4 p{
+	text-align: center;
+	margin-top:10px;
+	line-height: 1.8;
+}
+.summary .col-md-4 .h2{
+	font-family: "AvenirNext-Bold",Helvetica,Arial,sans-serif;
+            color: #4f4f51;
+            
+}
+div .text-muted {
+	font-size: 22px;
+}
+.right-pic{
+	text-align: center;
+
+}
+.right-pic img{
+	padding-top: 8%;
+	padding-left: 8%;
+}
+.profile-l .para{
+	/*font-family: "AvenirNext-Bold",Helvetica,Arial,sans-serif;*/
+            color: #4f4f51;
+            font-size:1em;
+}
+.profile-r div{
+	padding-top: 50px;
+	text-align: center;
+	
+}
+.profile-r div img{
+	width:80%;	
+}
+
+#tab-resume .row,#tab-profile .row,#tab-contact .row,#tab-demo .row{
+	margin-left:20px;
+	margin-right:20px;
+}
+#tab-demo{
+	margin-bottom: 60px;
+}
+.demo-img{
+	padding-top:10%;
+	padding-bottom:10%;
+}
+
+.title_content .text_content {
+	color: #666666;
+}
+.contact-img{
+text-align: center;
+margin-bottom: 20px;}
+.work-lists {
+	padding: 10px;
+}
+.study-para{
+		font-size: 14px;
+		line-height: 26px;
+		color:#888;
+}
+li.work-list{
+	font-size: 14px;
+		line-height: 26px;
+		color:#888;
+		list-style: square;
+}
+.divider {
+    margin: 50px 0;
+ }
+ footer .para{
+ 	text-align: center;
+ 	color:#999;
+ 	font-size:13px;
+ }
+footer{
+	padding-bottom: 50px;
+}
+div.detail-about-tabs{
+	background-color: rgba(223,245,255,0.35);
+}
+
+#myTab{
+	position:relative;
+	left:2%;
+	
+}
+
+.demo-info1 h3.main-heading{
+	margin-top: 30px;
+    margin-bottom: 10px;
+	font-size: 28px;
+}
+.demo-info1 .text_content{
+	text-align: right;
+	float:none;
+}

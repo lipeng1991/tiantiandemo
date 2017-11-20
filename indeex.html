@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css"  rel="stylesheet">
+		<link href="css/main.css"   rel="stylesheet">
+		<link href="css/test.css"  rel="stylesheet">
+		<link href="css/progress.css"  rel="stylesheet">
+		<title>跌跌撞撞误入前端</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<style>
+			
+			@media (max-width: 768px) {
+				.summary {
+					padding-right: 3px;
+					padding-left: 3px;
+				}
+				.carousel {
+					height: 300px;
+					margin-bottom: 30px;
+				}
+				.carousel .item {
+					height: 300px;
+				}
+				.carousel img {
+					min-height: 300px;
+				}
+				.carousel .item img {
+                width: 100%;
+                height: auto;
+                }
+				.carousel-caption p {
+					font-size: 16px;
+					line-height: 1.4;
+				}
+				.feature-heading {
+					font-size: 34px;
+				}
+				.feature-heading .text-muted {
+					font-size: 22px;
+				}
+			}
+			
+			@media (min-width: 992px) {
+				.feature-heading {
+					margin-top: 50px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--nav start-->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse " id="menu-nav" role="navigation">
+			<!--描述：container-fluid表示充满整屏，container表示固定宽度，且居中显示-->
+			<div class="container">
+				<div class="navbar-header">
+					<!--以下代码表示当屏幕缩放到在一个小范围的时候，导航条会压缩，变成最右端有一个collapse折叠条-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+					<!--以上代码表示屏幕在一个小范围的时候，导航条会压缩--结束-->
+
+					<a class="navbar-brand" href="#"><i class="glyphicon glyphicon-user"></i> 个人主页</a>
+				</div>
+				<!--描述：下一行代码对应的意思就是：当屏幕缩放到一个小范围时，才会起作用-->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="">
+							<a href="#tab-profile">Profile</a>
+						</li>
+						<li>
+							<a href="#tab-resume">Resume</a>
+						</li>
+						<li>
+							<a href="#tab-contact">Contact</a>
+						</li>
+						<li>
+							<a href="#tab-demo">Demo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--nav end-->
+		<!--轮播图 start-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="img-responsive" src="images/reading.jpg" alt="reading pic">
+					<div class="carousel-caption">
+						<div class="p mycite">读书使我变得更加的平静。</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="images/running.jpg" alt="running pic">
+
+					<div class="carousel-caption">
+						<div class="p mycite">跑步让我看到坚持的力量。</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="images/travel1.jpg" alt="travel pic">
+
+					<div class="carousel-caption">
+						<div class="p mycite">旅行中我发现更多的美好。</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!--轮播图 end-->
+		<!--主体部分-->
+		<div class="container-fluid summary">
+			<!--主题介绍-->
+			<div class="study-heading">
+				<header>
+					<div class="h1">STRAT TO STUDY</div>
+					<div class="para">犹豫不决，思而不学，最可怕的行为。</div>
+				</header>
+			</div>
+			<!-- 简介 -->
+			<div class="row" id="summary-container">
+
+				<div class="col-md-4">
+					<div class="addborder">
+					<img class="img-square" src="images/htmlicon.png" alt="html">
+
+					<div class="h2">HTML</div>
+
+					<p>HTML是超文本标记语言，全称为HyperText Markup Language，标准通用标记语言下的一个应用。 在网页中起结构的作用。
+					</p>
+
+					<p class="addbtn">
+						<a class="btn btn-info" href="#" role="button">点击查看详情</a>
+					</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img class="img-square" src="images/cssicon.jpg" alt="css">
+
+					<div class="h2">CSS</div>
+
+					<p>CSS是层叠样式表，全称为Cascading Style Sheets，是一种用来表现HTML文件样式的语言。采用外部引入方式来影响文件样式。</p>
+
+					<p class="addbtn">
+						<a class="btn btn-info" href="#" role="button">点击查看详情</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-square" src="images/jsicon.png" alt="javascript">
+
+					<div class="h2">JavaScript</div>
+
+					<p>JavaScript是一种属于网络的脚本语言,用于Web应用开发,为网页添加各式各样的动态功能,为用户提供更流畅美观的浏览体验。</p>
+
+					<p class="addbtn">
+						<a class="btn btn-info" href="#" role="button">点击查看详情</a>
+					</p>
+				</div>
+			</div>
+			<!--<hr class="divider" />-->
+			<!--描述：下面是一个标签页--ul元素之间表示网页的主题标签-->
+			<div class="detail-about-tabs">
+				<ul class="nav nav-tabs" role="tablist" id="myTab">
+					
+					<li class="active">
+						<a href="#tab-profile" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-briefcase"></i> profile</a>
+					</li>
+					<li class="tabs-resume">
+						<a href="#tab-resume" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-file"></i> resume</a>
+					</li>
+					<li>
+						<a href="#tab-contact" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-earphone"></i> contact</a>
+					</li>
+					<li>
+						<a href="#tab-demo" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-eye-open"></i> demo</a>
+					</li>
+				</ul>
+				<!--描述：下面是一个标签主题内容--分别一一对应ul元素中的子元素li里的href属性-->
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab-profile">
+						<div class="row feature">
+							<div class="col-md-6 profile-l">
+								<div class="feature-heading "> <span class="text-muted"></span></div>
+								<div class="row ">
+									<div class="col-lg-12 ">
+										<!--About me-->
+										<div class="title_content">
+											<div class="text_content">崔甜甜</div>
+											<div class="clear"></div>
+										</div>
+
+										<ul class="about">
+
+											<li>
+												<i class="glyphicon glyphicon-user"></i>
+												<label>姓名</label>
+												<span class="value">崔甜甜</span>
+												<div class="clear"></div>
+											</li>
+
+											<li>
+												<i class="glyphicon glyphicon-calendar"></i>
+												<label>出生日期</label>
+												<span class="value">1990.9.2</span>
+												<div class="clear"></div>
+											</li>
+
+											<li>
+												<i class="glyphicon glyphicon-map-marker"></i>
+												<label>地址</label>
+												<span class="value">山西晋城</span>
+												<div class="clear"></div>
+											</li>
+
+											<li>
+												<i class="glyphicon glyphicon-envelope"></i>
+												<label>Email</label>
+												<span class="value">13313567245@163.com</span>
+												<div class="clear"></div>
+											</li>
+
+											<li>
+												<i class="glyphicon glyphicon-phone"></i>
+												<label>电话</label>
+												<span class="value">13313567245</span>
+												<div class="clear"></div>
+											</li>
+
+											<li>
+												<i class="glyphicon glyphicon-globe"></i>
+												<label>website</label>
+												<span class="value"><a href="#" target="_blank">tanyacui.com</a></span>
+												<div class="clear"></div>
+											</li>
+
+										</ul>
+										<blockquote>
+											<p class="para" style="margin-bottom:50px">
+
+												When I'm scared to tackle an obstacle,I close my eyes and pretend I'm an 80 years old woman who regrets not tackling all the obstacles she wanted to in life. Then when I feel like that old woman,I say to myself,"I wish I was young again"!
+
+											</p>
+										</blockquote>
+										<div class="para" style="margin-bottom:20px">
+
+											每当我遇到自己不敢直面的困难，我就会闭上双眼,想象自己已是一个白发老人，因为人生中曾经放弃和逃避过的无数困难而懊悔不已，遗憾不已。当我进入到那个老人的心态中之后，我会对自己说：如果上天能再给我一次机会，我希望可以再年轻一次。
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6 profile-r">
+								<div class="right-pic">
+									<img  src="images/img-profile/about_2.png" style="width: 74%;" alt="" />
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-resume">
+						<div class="row feature">
+							<div class="col-md-12">
+								<div class="feature-heading "><span class="text-muted"></span>
+								</div>
+								<div class="row">
+
+									<!-- .resume-left -->
+									<div class="col-md-6" id="myresume-l">
+										<!-- .title_content -->
+										<div class="title_content" style="float: none;">
+											<div class="text_content">掌握技能</div>
+											<div class="clear"></div>
+										</div>
+										<!-- /.title_content -->
+										<section class="container-pro">
+											<span class="title-pro">HTML</span>
+											<div class="progress">
+												<span class="blue" style="width: 70%;">
+      <span>
+        70%
+      </span>
+												</span>
+											</div>
+											<span class="title-pro">CSS</span>
+											<div class="progress">
+												<span class="orange" style="width: 60%;">
+      <span>
+        60%
+      </span>
+												</span>
+											</div>
+											<span class="title-pro">JavaScript</span>
+											<div class="progress">
+												<span class="red" style="width: 50%;">
+      <span>
+        50%
+      </span>
+												</span>
+											</div>
+											<span class="title-pro">Bootstrap</span>
+											<div class="progress">
+												<span class="orange" style="width: 60%;">
+      <span>
+        60%
+      </span>
+												</span>
+											</div>
+											<span class="title-pro">jQuery</span>
+											<div class="progress">
+												<span class="orange" style="width: 60%;">
+      <span>
+        60%
+      </span>
+												</span>
+											</div>
+										</section>
+										<!-- .title_content -->
+										<div class="title_content" style="float: none;">
+											<div class="text_content">兴趣爱好</div>
+											<div class="clear"></div>
+										</div>
+										<!-- /.title_content -->
+
+										<section class="container-pro">
+											<span class="title-pro">跑步</span>
+											<div class="progress">
+												<span class="green" style="width: 80%;">
+      <span>
+        80%
+      </span>
+												</span>
+											</div>
+											<span class="title-pro">乒乓球</span>
+											<div class="progress">
+												<span class="green" style="width: 85%;">
+      <span>
+        85%
+      </span>
+												</span>
+											</div>
+											<span class="title-pro">阅读</span>
+											<div class="progress">
+												<span class="blue" style="width: 75%;">
+      <span>
+        75%
+      </span>
+												</span>
+											</div>
+
+										</section>
+
+										<!-- .title_content -->
+										<div class="title_content" style="float: none;">
+											<div class="text_content">英语能力</div>
+											<div class="clear"></div>
+										</div>
+										<!-- /.title_content -->
+										<section class="container-pro">
+											<span class="title-pro">English</span>
+											<div class="progress">
+												<span class="blue" style="width: 70%;">
+      <span>
+        70%
+      </span>
+												</span>
+											</div>
+
+										</section>
+									</div>
+									<!-- /.resume-right -->
+									<!-- .resume-left -->
+									<div class="col-md-6 resume-left" id="myresume-r">
+										<!-- .title_content -->
+										<div class="title_content" style="margin-bottom:5px">
+											<div class="text_content">教育经历</div>
+											<div class="clear"></div>
+										</div>
+
+										<!-- .attributes -->
+										<ul class="attributes">
+											<li class="first">
+												<h5>养猪 <span class="duration"><i class="fa fa-calendar color"></i> 2010.09 - 2014.06</span></h5>
+												<h6>家里蹲大学<span class="fa fa-book">顶级</span> </h6>
+												<div class="study-para p">一流屠夫</div>
+											</li>
+										</ul>
+										<br>
+
+										<!-- .title_content -->
+										<div class="title_content">
+											<div class="text_content">工作经历</div>
+											<div class="clear"></div>
+										</div>
+										<!-- /.title_content -->
+
+										<!-- .attributes -->
+										<ul class="attributes">
+											<li class="first">
+												<h5>影像测试工程师 <span class="duration"><i class="fa fa-calendar color"></i> 2014.07- 2016.08</span></h5>
+												<h5><span class="fa fa-book"></span> 北京市第一屠宰场</h6>
+										<p class="work-lists">
+											<ul class="addDot"><span>主要负责：</span>
+												<li class="work-list">
+												
+													主要是杀猪
+												</li>
+												<li class="work-list">
+													
+													主要是杀猪
+												</li>
+												<li class="work-list">
+													;
+												</li>
+												<li class="work-list">
+													使用Photoshop基本功能分析镜头含有particle的产品,调试particle抓取参数
+												</li>
+											</ul>
+										</p>
+									</li>
+								</ul>
+								<!-- /.attributes -->
+
+							</div>
+							<!-- /.resume-left -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane" id="tab-contact">
+				<div class="row feature">
+					<div class="col-lg-12">
+						<div class="feature-heading "><span class="text-muted"></span></div>
+
+						<div class="row" id="contact-user">
+							<div class="col-md-5">
+								<div class="contact-info">
+									<!--<h3 class="main-heading"><span>Contact info</span></h3>-->
+									
+									<div class="title_content" style="float: none;">
+										<div class="text_content">Contact info</div>
+
+										<div class="clear"></div>
+									</div>
+										<div class="contact-img"><img class="img-circle" src="images/small.jpg" style="width: 60%;">
+										</div>
+										
+									<ul>
+										<li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i> 地址:</span>北京</li>
+										<li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span> 不告诉你哦</li>
+										<li><span class="span-info"><i class="glyphicon glyphicon-phone"></i> 电话:</span> 不告诉你哦</li>
+										<li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> 网站:</span> tanyacui.com</li>
+									</ul>
+								</div>
+								<!-- /Contact Info -->
+								<div class="clear"></div>
+
+							</div>
+
+							<div class="col-md-7">
+								<!-- Contact Form -->
+								<div class="title_content" style="float: none;">
+									<div class="text_content">Let's keep in touch</div>
+									<div class="clear"></div>
+								</div>
+
+								<div class="contact-form">
+									<!--<h3 class="main-heading"><span>Let's keep in touch</span></h3>-->
+
+									<div id="contact-status"></div>
+
+									<form action="#" id="contactform">
+										<p class="form-group" id="contact-name">
+											<label for="name">Your Name</label>
+											<input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
+										</p>
+										<p class="form-group" id="contact-email">
+											<label for="email">Your Email</label>
+											<input type="text" name="email" class="form-control email-contact" id="inputSuccess" placeholder="Email..." />
+										</p>
+
+										<p class="form-group" id="contact-message">
+											<label for="message">Your Message</label>
+											<textarea name="message" cols="88" rows="6" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
+										</p>
+										<input type="reset" name="reset" value="CLEAR" class="reset">
+										<!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
+
+										<section class="button-demo" style="display: inline-block;">
+											<button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">SEND MESSAGE</button>
+										</section>
+
+									</form>
+								</div>
+								<!-- /Contact Form -->
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+				<div class="tab-pane" id="tab-demo">
+				<div class="row feature">
+					<div class="col-lg-12">
+						<div class="feature-heading "><span class="text-muted"></span></div>
+
+						<div class="row" id="demo-user">
+							<div class="col-md-4">
+								<div class="demo-info1">
+									<h3 class="main-heading">金玉古村</h3>
+									
+									<div class="title_content" style="float: none;">
+										<div class="text_content">手机端网页</div>
+
+									</div>
+										<div class="demo-img"><img class="img-square" src="images/scan.png" style="width: 60%;">
+										</div>
+										
+									
+								</div>
+								
+						
+
+							</div>
+
+							<div class="col-md-4">
+								<!-- demo 2-->
+									<div class="demo-info1">
+									<h3 class="main-heading">个人简历</h3>
+									
+									<div class="title_content" style="float: none;">
+										<div class="text_content">纯静态HTML+CSS</div>
+
+									</div>
+										<div class="demo-img"><a href="Demo/static_webpage/index.html" target="_blank"><img class="img-square" src="images/cv.png" style="width: 60%;">
+										</a></div>
+										
+									
+								</div>
+							
+
+							</div>
+						<div class="col-md-4">
+									<div class="demo-info1">
+									<h3 class="main-heading">瀑布流效果</h3>
+									
+									<div class="title_content" style="float: none;">
+										<div class="text_content">js插件+绝对定位</div>
+
+									</div>
+										<div class="demo-img"><a href="Demo/waterfall/index.html" target="_blank"><img class="img-square" src="images/waterfall.jpg" style="width: 60%;">
+										</a></div>
+										
+									
+								</div>
+						</div>
+					
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			
+			</div>
+			<hr class="divider">
+			
+    <footer>
+        <div class="para">&copy; 2016 Tanyacui Personal resume </div>
+    </footer>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+         $(function(){
+				$('#menu-nav a').click(function() {
+					var href = $(this).attr('href');
+					$("#myTab a[href='" + href + "']").tab('show');
+				});
+		});
+		</script>
+	</body>
+
+</html>

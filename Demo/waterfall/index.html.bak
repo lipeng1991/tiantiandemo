@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>照片墙</title>
+			
+	</head>
+
+	<style>
+   *{padding: 0;margin:0;}
+    #main{
+        position: relative;
+		margin:0 auto;
+    }
+    .pin{
+        padding: 15px 0 0 15px;
+        float:left;
+    }
+    .box{
+        padding: 10px;
+        border:1px solid #ccc;
+        box-shadow: 0 0 6px #ccc;
+        border-radius: 5px;
+    }
+    .box img{
+        width:150px;
+        height:auto;
+    }
+
+	</style>
+
+	<body>
+		<div id="main">
+    <div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+			<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x70?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x175?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x155?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x78?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x155?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x90?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x158?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x130?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x166?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x220?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x200?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x105?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x177?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x105?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x100?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x100?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x130?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x155?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x100?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x158?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x125?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x200?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x95?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x175?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x67?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x90?random=yes" />
+			</div>
+			</div>
+		<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+			   <div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+			<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x70?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x175?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x155?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x78?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x155?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x90?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x158?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x130?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x166?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x220?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x200?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x105?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x177?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x105?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x100?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x100?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x130?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x155?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x140?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x100?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x158?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x125?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x160?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x170?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x200?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x95?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x175?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x67?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x180?random=yes" />
+			</div>
+			</div>
+						<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x90?random=yes" />
+			</div>
+			</div>
+		<div class="pin">
+        <div class="box">
+			<img src="holder.js/150x230?random=yes" />
+			</div>
+			</div>
+		
+		</div>
+
+
+		<script src="js/holder.js"></script>
+
+		
+		<script src="js/waterfall.js"></script>	
+	</body>
+
+</html>
